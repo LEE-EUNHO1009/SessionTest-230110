@@ -17,6 +17,12 @@
 		}else{
 			out.print(sessionId+"님 로그인 중입니다.");
 		}
+		int sTime = session.getMaxInactiveInterval(); //session의 유효시간 가져오기(단위:초)
+		System.out.println("기본값"+sTime);
+		session.setMaxInactiveInterval(3600); //세션의 유효시간 1시간으로 변경(3600초=1시간)
+		int sTime2 = session.getMaxInactiveInterval(); //세션 유효시간 가져오기(단위:초)
+		System.out.println("변경 후"+sTime2);
+		
 	%>
 	<br>
 	<a href="Logout.jsp">로그아웃</a>
