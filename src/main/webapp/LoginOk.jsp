@@ -17,7 +17,7 @@
 	
 		if((mid.equals("tiger")) && (mpw.equals("12345"))){ //참이면 로그인 성공/ 객체와 일반값을 ...?
 			//로그인 시킨다(로그인 상태로 전환)는 것은 세션에 아이디를 저장한다는 의미와 동일
-			session.setAttribute("memberId", mid);
+			session.setAttribute("memberId", mid);  //개발자가 마음대로 쓰는 변수 이름 "memberId"
 			session.setAttribute("memberPw", mpw);
 			
 			out.print(mid+"님 로그인 성공하셨습니다.(세션 생성 성공)");

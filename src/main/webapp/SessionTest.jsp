@@ -8,7 +8,7 @@
 </head>
 <body>
 	<%
-		String sessionId = (String) session.getAttribute("memberId");
+		String sessionId = (String) session.getAttribute("memberId"); //sessionId 곳에 문자열로 저장/ (String)은 형변환한것임
 	//(String)은 형변환 한 것임, 뒤쪽에 toString();써줘도 되지만 null값일 때 문제가 됨. 형변환하는 게 나음
 		//System.out.println(sessionId); //콘솔에서 값 나옴
 		
