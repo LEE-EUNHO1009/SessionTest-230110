@@ -12,6 +12,8 @@
 		
 		String mid = request.getParameter("memberId");
 		String mpw = request.getParameter("memberPw");
+		
+		//int a = Integer.parseInt(mid); //그냥 바로 mid하면 안됨. 문자열을 정수로 형변환
 	
 		if((mid.equals("tiger")) && (mpw.equals("12345"))){ //참이면 로그인 성공/ 객체와 일반값을 ...?
 			//로그인 시킨다(로그인 상태로 전환)는 것은 세션에 아이디를 저장한다는 의미와 동일
